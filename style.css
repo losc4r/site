@@ -1,1 +1,60 @@
 @charset "UTF-8";
+
+/***** Breakpoints *****/
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Smartphone Landscape >>>>>>>>>>>>>>*/
+
+@media (min-width: 576px) {
+    body {
+        background-color: #00c3ff;
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 768px) {
+    body {
+        background-color: #fff000;
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 992px) {
+    body {
+        background-color: rgb(255, 60, 0);
+        color: #ffffff;
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Pcs / Notebooks >>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1200px) {
+    body {
+        background-color: #ff00bf;
+        color: #ffffff
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Telas FullHD / 4k / Smart Tv >>>>>>*/
+
+@media (min-width: 1400px) {
+    body {
+        background-color: #3b002d;
+        color: #ffffff
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
