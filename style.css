@@ -4,6 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
 
+/* Variáveis */
+
+:root {
+    --cinza1: #b2b2b2;
+    --cinza2: #a0a0a0;   
+    --cinza3: #707070;
+    --branco: #fff;
+    --azul: #2771a2;
+    --azul1: #7f98b0;
+
+
+
+    
+
+
+}
+
 /* CSS Reset (compatibilizar com todos os navegadores*/
 * {
     margin: 0;
@@ -15,6 +32,8 @@
 body {
     font-family: "Montserrat", serif;
     font-size: 1em; /* 1em = 100% (tamanho padrão) */
+    text-align: center;
+
 }
 
 .container {
@@ -24,14 +43,69 @@ body {
 /* Smartphone Portrait >>>>>>>>>>>>>>>*/
 /* Cabeçalho */
 header {
-    height: 65px;
-    background-color: #a0a0a0;
+    height: 80px;
+    background-color: #2771a2;
 }
 
 #logo img {
-    width: 85px;
-    height: 45px;
-    margin: 10px 0px 0px 7px; /* 1= top | 2=right | 3=botton | 4=left */
+    width: 110px;
+    height: 60px;
+    margin: 8px 0px 0px 7px; /* 1= top | 2=right | 3=botton | 4=left */
+}
+
+#check {
+    display: none;
+}
+
+/* Efeito de deslizar o menu */
+/* Se check estiver "ticado" criar um estilo para <ul> */
+#check:checked~ul {
+    left: 0px;
+    transition: 0.7s;
+
+}
+
+label {
+    font-size: 2em;
+    position: fixed;
+    top: 15px;
+    height: 15px;
+    right: 15px;
+    color: rgb(255, 255, 255); /* 0.5 = 50% transparecnia (0 a 1 (100% */
+}
+
+nav ul {
+    height: 100vh; /* 100vh - 100% da altura da tela */
+    background-color: var(--azul1);
+    list-style: none; /* Remover bullets (bolinhas)*/
+    width: 50%;
+    position: fixed;
+    top: 80px;
+    left: -50%;
+
+}
+
+nav ul li {
+    padding: 15px 20px 15px 20px; /* 1= top | 2=right | 3=botton | 4=left */
+    border-bottom: 1px solid var(--branco); /* Linhas sobre os nomes do menu */
+    text-align: left;
+    
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    }
+
+/* aqui só se o menu for para a direita, textos alinhados */
+#contato {
+    padding-right: 16px;
+}
+#sobre {
+    padding-right: 32px;
+}
+#inicio {
+    padding-right: 35px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -41,12 +115,12 @@ header {
 @media (min-width: 576px) {
     /* Cabeçalho */
     #logo img {
-        margin: 10px 0px 0px 0px; /* 1= top | 2=right | 3=botton | 4=left */
+        margin: 7px 0px 0px 0px; /* 1= top | 2=right | 3=botton | 4=left */
     }
 
     .container {
         max-width: 540px;
-        background-color: #a0a0a0;
+        background-color: #2771a2;
     }
 }
 
@@ -58,13 +132,13 @@ header {
     /* Cabeçalho */
     .container {
         max-width: 720px;
-        background-color: #a0a0a0;
+        background-color: #2771a2;
     }
     header {
-        height: 90px;
+        height: 80px;
     }
     #logo img {
-        width: 110px;
+        width: 115px;
         height: 65px;
     }
 
@@ -78,13 +152,13 @@ header {
     /* Cabeçalho */
     .container {
         max-width: 960px;
-        background-color: #a0a0a0;
+        background-color: #2771a2;
     }
     header {
-        height: 105px;
+        height: 95px;
     }
     #logo img {
-        width: 130px;
+        width: 140px;
         height: 80px;
     }
 
@@ -99,7 +173,7 @@ header {
     /* Cabeçalho */
     .container {
         max-width: 1140px;
-        background-color: #a0a0a0;
+        background-color: #2771a2;
     }
     header {
         height: 110px;
@@ -118,7 +192,7 @@ header {
     /* Cabeçalho */
     .container {
         max-width: 1360px;
-        background-color: #a0a0a0;
+        background-color: #2771a2;
     }
     header {
         height: 120px;
