@@ -13,12 +13,7 @@
     --branco: #fff;
     --azul: #2771a2;
     --azul1: #7f98b0;
-
-
-
-    
-
-
+    --azul2: #033150;
 }
 
 /* CSS Reset (compatibilizar com todos os navegadores*/
@@ -38,6 +33,23 @@ body {
 
 .container {
     margin: 0 auto; /* centraliza o bloco de layout*/
+    text-align: center;
+
+}
+
+.botao {
+    text-decoration: none;
+    color: var(--azul2);
+    font-size: 1.3em;
+    background-color: var(--branco);
+    font-weight: bold;
+    width: 120px;
+    padding: 3px 0px;
+    border: 2px solid var(--azul2);
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 10px;
+
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>*/
@@ -47,10 +59,11 @@ header {
     background-color: #2771a2;
 }
 
+
 #logo img {
     width: 110px;
     height: 60px;
-    margin: 8px 0px 0px 7px; /* 1= top | 2=right | 3=botton | 4=left */
+    margin: 9px 0px 0px 7px; /* 1= top | 2=right | 3=botton | 4=left */
 }
 
 #check {
@@ -71,17 +84,17 @@ label {
     top: 15px;
     height: 15px;
     right: 15px;
-    color: rgb(255, 255, 255); /* 0.5 = 50% transparecnia (0 a 1 (100% */
+    color: var(--azul2); /* 0.5 = 50% transparencia (0 a 1 (100% */
 }
 
 nav ul {
     height: 100vh; /* 100vh - 100% da altura da tela */
-    background-color: var(--azul1);
+    background-color: var(--azul1); /* Cor do menu */
     list-style: none; /* Remover bullets (bolinhas)*/
-    width: 50%;
-    position: fixed;
-    top: 80px;
-    left: -50%;
+    width: 50%; /* Tamanho do menu ao abrir */
+    position: fixed; 
+    top: 80px; /* Alinhar o menu com o cabeçalho */
+    left: -50%; /* Posição do menu **colocar para a direita (rigth)** */
 
 }
 
@@ -95,18 +108,33 @@ nav ul li {
 nav ul li a {
     color: var(--branco);
     text-decoration: none;
+    font-weight: bold;
     }
 
-/* aqui só se o menu for para a direita, textos alinhados */
-#contato {
-    padding-right: 16px;
+    /* Banner */
+main {
+    height: 70vh; /* Ajuste de altura do banner */
+    background: url(img/6S4A0817.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-#sobre {
-    padding-right: 32px;
+
+main h1, h2 {
+    color: var(--branco) ;
+    text-shadow: var(--azul2) 0.05em 0.05em 0.05em; /* sombra */ 
 }
-#inicio {
-    padding-right: 35px;
+
+main h1 {
+    font-size: 2.3em;
 }
+main h2 {
+    font-size: 1em;
+}
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -119,7 +147,7 @@ nav ul li a {
     }
 
     .container {
-        max-width: 540px;
+       /* max-width: 540px;*/
         background-color: #2771a2;
     }
 }
@@ -129,11 +157,12 @@ nav ul li a {
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 768px) {
-    /* Cabeçalho */
+    
     .container {
-        max-width: 720px;
+       /* max-width: 720px; */
         background-color: #2771a2;
     }
+    /* Cabeçalho */
     header {
         height: 80px;
     }
@@ -142,6 +171,9 @@ nav ul li a {
         height: 65px;
     }
 
+    nav ul {
+        top: 80px;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -149,11 +181,12 @@ nav ul li a {
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 992px) {
-    /* Cabeçalho */
+    
     .container {
-        max-width: 960px;
+       /* max-width: 960px; */
         background-color: #2771a2;
     }
+    /* Cabeçalho */
     header {
         height: 95px;
     }
@@ -162,6 +195,9 @@ nav ul li a {
         height: 80px;
     }
 
+    nav ul {
+        top: 95px;
+    }
 }
 
 
@@ -170,17 +206,62 @@ nav ul li a {
 /* Pcs / Notebooks >>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 1200px) {
-    /* Cabeçalho */
+   
     .container {
-        max-width: 1140px;
+       /* max-width: 1140px; */
         background-color: #2771a2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+ /* Cabeçalho */
     header {
         height: 110px;
+    }
+
+    body {
+        text-align: left;
     }
     #logo img {
         width: 150px;
         height: 90px;
+        margin: 8px 0px 0px 40px;
+    }
+/* Transformação do menu */
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;
+        /*background-color: transparent; /* Remover a cor do background */
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+        margin-right: 50px;
+        display: flex;
+    }
+
+    nav ul li a {
+        color: var(--branco);
+    }
+    
+    nav ul li a:hover {
+        color: var(--azul1);
+    }
+
+    main h1 {
+        font-size: 700%;
+        text-align: center;
+    }
+    
+    main h2 {
+        font-size: 250%;
+        text-align: center;
     }
 }
 
@@ -191,7 +272,7 @@ nav ul li a {
 @media (min-width: 1400px) {
     /* Cabeçalho */
     .container {
-        max-width: 1360px;
+       /* max-width: 1360px; */
         background-color: #2771a2;
     }
     header {
