@@ -14,6 +14,9 @@
     --azul: #2771a2;
     --azul1: #7f98b0;
     --azul2: #033150;
+    --azul3: #00607c;
+    --azul4: #001d25;
+    --vermelho: #760202;
 }
 
 /* CSS Reset (compatibilizar com todos os navegadores*/
@@ -39,13 +42,13 @@ body {
 
 .botao {
     text-decoration: none;
-    color: var(--azul2);
+    color: var(--branco);
     font-size: 1.3em;
-    background-color: var(--branco);
+    background-color: var(--vermelho);
     font-weight: bold;
     width: 120px;
     padding: 3px 0px;
-    border: 2px solid var(--azul2);
+    border: 2px solid var(--branco);
     border-radius: 20px;
     align-self: center;
     margin-top: 10px;
@@ -56,7 +59,7 @@ body {
 /* Cabeçalho */
 header {
     height: 80px;
-    background-color: #2771a2;
+    background-color: var(--azul4);
 }
 
 
@@ -84,12 +87,12 @@ label {
     top: 15px;
     height: 15px;
     right: 15px;
-    color: var(--azul2); /* 0.5 = 50% transparencia (0 a 1 (100% */
+    color: var(--branco); /* 0.5 = 50% transparencia (0 a 1 (100% */
 }
 
 nav ul {
     height: 100vh; /* 100vh - 100% da altura da tela */
-    background-color: var(--azul1); /* Cor do menu */
+    background-color: var(--azul4); /* Cor do menu */
     list-style: none; /* Remover bullets (bolinhas)*/
     width: 50%; /* Tamanho do menu ao abrir */
     position: fixed; 
@@ -114,7 +117,7 @@ nav ul li a {
     /* Banner */
 main {
     height: 70vh; /* Ajuste de altura do banner */
-    background: url(img/6S4A0817.jpg);
+    background: url(img/6S4A0817.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -125,14 +128,14 @@ main {
 
 main h1, h2 {
     color: var(--branco) ;
-    text-shadow: var(--azul2) 0.05em 0.05em 0.05em; /* sombra */ 
+    text-shadow: var(--azul4) 0.03em 0.03em 0.03em; /* sombra */ 
 }
 
 main h1 {
-    font-size: 2.3em;
+    font-size: 2.2em;
 }
 main h2 {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 
@@ -148,8 +151,15 @@ main h2 {
 
     .container {
        /* max-width: 540px;*/
-        background-color: #2771a2;
+        background-color: var(--azul4);
     }
+    main {
+        height: 70vh; /* Ajuste de altura do banner */
+        background: url(img/6S4A0817.png);
+        background-size: cover;
+    }
+    
+
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -160,7 +170,7 @@ main h2 {
     
     .container {
        /* max-width: 720px; */
-        background-color: #2771a2;
+        background-color: var(--azul4);
     }
     /* Cabeçalho */
     header {
@@ -184,7 +194,7 @@ main h2 {
     
     .container {
        /* max-width: 960px; */
-        background-color: #2771a2;
+        background-color: var(--azul4);
     }
     /* Cabeçalho */
     header {
@@ -209,7 +219,7 @@ main h2 {
    
     .container {
        /* max-width: 1140px; */
-        background-color: #2771a2;
+        background-color: var(--azul4);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -273,7 +283,7 @@ main h2 {
     /* Cabeçalho */
     .container {
        /* max-width: 1360px; */
-        background-color: #2771a2;
+        background-color:var(--azul4);
     }
     header {
         height: 120px;
