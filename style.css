@@ -77,7 +77,7 @@ header {
 /* Se check estiver "ticado" criar um estilo para <ul> */
 #check:checked~ul {
     left: 0px;
-    transition: 0.7s;
+    
 
 }
 
@@ -98,6 +98,7 @@ nav ul {
     position: fixed; 
     top: 80px; /* Alinhar o menu com o cabeçalho */
     left: -50%; /* Posição do menu **colocar para a direita (rigth)** */
+    transition: all 0.7s;
 
 }
 
@@ -184,6 +185,30 @@ main h2 {
     nav ul {
         top: 80px;
     }
+
+    main h1 {
+        font-size: 400%;
+        text-align: center;
+    }
+    
+    main h2 {
+        font-size: 135%;
+        text-align: center;
+    }
+
+    .botao {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    background-color: var(--vermelho);
+    font-weight: bold;
+    width: 150px;
+    padding: 3px 0px;
+    border: 2px solid var(--branco);
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 15px;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -207,6 +232,30 @@ main h2 {
 
     nav ul {
         top: 95px;
+    }
+
+    main h1 {
+        font-size: 500%;
+        text-align: center;
+    }
+    
+    main h2 {
+        font-size: 180%;
+        text-align: center;
+    }
+
+    .botao {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    background-color: var(--vermelho);
+    font-weight: bold;
+    width: 120px;
+    padding: 3px 0px;
+    border: 2px solid var(--branco);
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 15px;
     }
 }
 
@@ -273,6 +322,22 @@ main h2 {
         font-size: 250%;
         text-align: center;
     }
+
+    .botao {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    background-color: var(--vermelho);
+    font-weight: bold;
+    width: 120px;
+    padding: 3px 0px;
+    border: 2px solid var(--branco);
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 10px;
+
+}
+    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -293,6 +358,7 @@ main h2 {
         height: 100px;
     }
 
+    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
