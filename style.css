@@ -15,7 +15,7 @@
     --azul1: #7f98b0;
     --azul2: #033150;
     --azul3: #00607c;
-    --azul4: #001d25;
+    --azul4: #002530;
     --vermelho: #760202;
 }
 
@@ -30,14 +30,12 @@
 body {
     font-family: "Montserrat", serif;
     font-size: 1em; /* 1em = 100% (tamanho padrão) */
-    text-align: center;
-
 }
 
 .container {
     margin: 0 auto; /* centraliza o bloco de layout*/
-    text-align: center;
-
+    display: flex;
+    align-items: center;
 }
 
 .botao {
@@ -52,16 +50,17 @@ body {
     border-radius: 20px;
     align-self: center;
     margin-top: 10px;
-
 }
 
+/* Fim do Layout */
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>*/
+
 /* Cabeçalho */
 header {
     height: 80px;
     background-color: var(--azul4);
 }
-
 
 #logo img {
     width: 110px;
@@ -77,8 +76,6 @@ header {
 /* Se check estiver "ticado" criar um estilo para <ul> */
 #check:checked~ul {
     left: 0px;
-    
-
 }
 
 label {
@@ -99,14 +96,12 @@ nav ul {
     top: 80px; /* Alinhar o menu com o cabeçalho */
     left: -50%; /* Posição do menu **colocar para a direita (rigth)** */
     transition: all 0.7s;
-
 }
 
 nav ul li {
     padding: 15px 20px 15px 20px; /* 1= top | 2=right | 3=botton | 4=left */
     border-bottom: 1px solid var(--branco); /* Linhas sobre os nomes do menu */
     text-align: left;
-    
 }
 
 nav ul li a {
@@ -139,7 +134,10 @@ main h2 {
     font-size: 0.9em;
 }
 
-
+.botao {
+    width: 120px;
+    padding: 3px 0px;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Smartphone Landscape >>>>>>>>>>>>>>*/
@@ -151,16 +149,18 @@ main h2 {
     }
 
     .container {
-       /* max-width: 540px;*/
-        background-color: var(--azul4);
+        max-width: 540px;
     }
     main {
         height: 70vh; /* Ajuste de altura do banner */
         background: url(img/6S4A0817.png);
         background-size: cover;
     }
-    
 
+    .botao {
+        width: 120px;
+        padding: 3px 0px;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -170,8 +170,8 @@ main h2 {
 @media (min-width: 768px) {
     
     .container {
-       /* max-width: 720px; */
-        background-color: var(--azul4);
+        max-width: 720px;
+    
     }
     /* Cabeçalho */
     header {
@@ -197,17 +197,8 @@ main h2 {
     }
 
     .botao {
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 1.3em;
-    background-color: var(--vermelho);
-    font-weight: bold;
-    width: 150px;
-    padding: 3px 0px;
-    border: 2px solid var(--branco);
-    border-radius: 20px;
-    align-self: center;
-    margin-top: 15px;
+        width: 120px;
+        padding: 3px 0px;
     }
 }
 
@@ -218,8 +209,8 @@ main h2 {
 @media (min-width: 992px) {
     
     .container {
-       /* max-width: 960px; */
-        background-color: var(--azul4);
+        max-width: 960px;
+    
     }
     /* Cabeçalho */
     header {
@@ -245,17 +236,8 @@ main h2 {
     }
 
     .botao {
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 1.3em;
-    background-color: var(--vermelho);
-    font-weight: bold;
-    width: 120px;
-    padding: 3px 0px;
-    border: 2px solid var(--branco);
-    border-radius: 20px;
-    align-self: center;
-    margin-top: 15px;
+        width: 120px;
+        padding: 3px 0px;
     }
 }
 
@@ -265,22 +247,14 @@ main h2 {
 /* Pcs / Notebooks >>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 1200px) {
-   
     .container {
-       /* max-width: 1140px; */
-        background-color: var(--azul4);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        max-width: 1140px; 
     }
  /* Cabeçalho */
     header {
         height: 110px;
     }
 
-    body {
-        text-align: left;
-    }
     #logo img {
         width: 150px;
         height: 90px;
@@ -301,8 +275,6 @@ main h2 {
     nav ul li {
         float: left;
         border: 0;
-        margin-right: 50px;
-        display: flex;
     }
 
     nav ul li a {
@@ -319,25 +291,14 @@ main h2 {
     }
     
     main h2 {
-        font-size: 250%;
+        font-size: 200%;
         text-align: center;
     }
 
     .botao {
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 1.3em;
-    background-color: var(--vermelho);
-    font-weight: bold;
     width: 120px;
     padding: 3px 0px;
-    border: 2px solid var(--branco);
-    border-radius: 20px;
-    align-self: center;
-    margin-top: 10px;
-
 }
-    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -347,8 +308,8 @@ main h2 {
 @media (min-width: 1400px) {
     /* Cabeçalho */
     .container {
-       /* max-width: 1360px; */
-        background-color:var(--azul4);
+        max-width: 1360px; 
+    
     }
     header {
         height: 120px;
@@ -357,8 +318,6 @@ main h2 {
         width: 180px;
         height: 100px;
     }
-
-    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

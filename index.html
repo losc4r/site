@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,65 @@
     <link rel="shortcut icon" href="img/globoabada.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Cabeçalho -->
-    <header class="container">
-        <!-- Logotipo -->
-        <div id="logo">
-            <img src="img/abadalogo.png" alt="Logotipo">
+    <header>
+        <div class="container">
+            <!-- Logotipo -->
+            <div id="logo">
+                <img src="img/abadalogo.png" alt="Logotipo">
+            </div>
+            <!-- Menu -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#9776;</label> <!--&#x268c; menu 2 barras-->
+                <label></label>
+                <ul>
+                    <li><a id="inicio" href="#">Início</a></li>
+                    <li><a id="sobre" href="#">Sobre</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a id="contato" href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Menu -->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check">&#9776;</label> <!--&#x268c; menu 2 barras-->
-            <label></label>
-            <ul>
-                <li><a id="inicio" href="#">Início</a></li>
-                <li><a id="sobre" href="#">Sobre</a></li>
-                <li><a href="#">Conteúdo</a></li>
-                <li><a id="contato" href="#">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- main (conteudo principal)-->
     <main>
         <h1>ABADÁ-CAPOEIRA</h1>
-            <h2>Associação Brasileira de Apoio e Desenvolvimento da Arte Capoeira</h2>
+        <h2>Associação Brasileira de Apoio e Desenvolvimento da Arte Capoeira</h2>
         <a href="https://www.youtube.com/@jequitiba" class="botao"> Saiba +</a>
     </main>
+
+    <!-- Seção de Destaque -->
+    <section id="destaque">
+        <div class="container">
+            <!-- Imagem de destaque -->
+            <div id="imagemDestaque">
+                <img src="img/mestrecamisa.jpg" alt="Mestre Camisa">
+            </div>
+
+            <!-- Texto de destaque -->
+            <div id="textoDestaque">
+                <h2>Você conhece a Abadá-Capoeira?</h2>
+                <p> TEXTO AQUI </p>
+                <div class="topicos">
+                    <img src="img/globoabada.png" alt="globo">
+                    <p>História da Abadá-Capoeira</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/camisaicone.png" alt="camisa">
+                    <p>Mestre Camisa</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/capoeiraicone.png" alt="capoeira">
+                    <p>História da Capoeira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
