@@ -388,6 +388,10 @@ main h2 {
 }
 /*** DESTAQUE ***/
 
+#imagemDestaque img {
+    width: 400px;
+    height: 400px;
+}
 
 
     #destaque {
