@@ -60,6 +60,7 @@ body {
 header {
     height: 80px;
     background-color: var(--azul4);
+    
 }
 
 #logo img {
@@ -113,7 +114,7 @@ nav ul li a {
     /* Banner */
 main {
     height: 70vh; /* Ajuste de altura do banner */
-    background: url(img/6S4A0817.png);
+    background: url(img/banner3.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -138,6 +139,67 @@ main h2 {
     width: 120px;
     padding: 3px 0px;
 }
+
+/*** Destaque ***/
+
+#destaque {
+    background: url(/img/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Espaçamento interno para não encostar nas bordas */
+    padding: 50px 15px;
+}
+
+/* Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
+
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Para esconder a imagem, usamos display:none no container da imagem | Para exibir novamente em telas maiores, usamos display: block 
+
+#imagemDestaque {
+    display: none;
+} */
+
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+    /* Arredondar um imagem quadrada */
+    border-radius: 50%;
+
+}
+
+#textoDestaque {
+    color: var(--branco)
+}
+
+#textoDestaque h2 {
+    margin-bottom: 20px;
+}
+
+/* Atenção !!! Detalhe do sinal ">" referente ao elemento imediato */
+
+#textoDestaque>p {
+    /*color: var(--azul);*/
+    margin-bottom: 15px;
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.topicos img {
+    margin-right: 10px;
+}
+
+.topicos p {
+    font-weight: 600;
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Smartphone Landscape >>>>>>>>>>>>>>*/
@@ -153,7 +215,7 @@ main h2 {
     }
     main {
         height: 70vh; /* Ajuste de altura do banner */
-        background: url(img/6S4A0817.png);
+        background: url(img/banner3.png);
         background-size: cover;
     }
 
@@ -161,6 +223,21 @@ main h2 {
         width: 120px;
         padding: 3px 0px;
     }
+
+    /*** Destaque ***/
+
+    #destaque .container {
+        flex-direction: row;
+    }
+    
+    #imagemDestaque {
+         margin-right: 50px; 
+    }
+    
+    #imagemDestaque img {
+        width: 256px;
+        height: 250px;
+        }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -187,18 +264,25 @@ main h2 {
     }
 
     main h1 {
-        font-size: 400%;
+        font-size: 440%;
         text-align: center;
     }
     
     main h2 {
-        font-size: 135%;
+        font-size: 170%;
         text-align: center;
     }
 
     .botao {
-        width: 120px;
+        width: 160px;
         padding: 3px 0px;
+    }
+
+    /** Destaque **/
+
+    #imagemDestaque img {
+        width: 330px;
+        height: 330px;
     }
 }
 
@@ -249,6 +333,7 @@ main h2 {
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px; 
+        justify-content: space-around;
     }
  /* Cabeçalho */
     header {
@@ -273,6 +358,8 @@ main h2 {
     }
 
     nav ul li {
+        display: flex;
+        justify-content: space-between;
         float: left;
         border: 0;
     }
@@ -299,6 +386,14 @@ main h2 {
     width: 120px;
     padding: 3px 0px;
 }
+/*** DESTAQUE ***/
+
+
+
+    #destaque {
+        /* O Codigo abaixo fixa o banner (efeito parallax)*/
+        background-attachment: fixed;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
