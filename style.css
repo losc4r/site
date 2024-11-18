@@ -30,11 +30,13 @@
 body {
     font-family: "Montserrat", serif;
     font-size: 1em; /* 1em = 100% (tamanho padrão) */
+    background-color: var(--azul4);
 }
 
 .container {
     margin: 0 auto; /* centraliza o bloco de layout*/
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -58,15 +60,16 @@ body {
 
 /* Cabeçalho */
 header {
-    height: 80px;
+    height: 60px;
     background-color: var(--azul4);
     
 }
 
 #logo img {
-    width: 110px;
-    height: 60px;
-    margin: 9px 0px 0px 7px; /* 1= top | 2=right | 3=botton | 4=left */
+    width: 125px;
+    height: 75px;
+    margin: 20px 0px 0px 15px;
+
 }
 
 #check {
@@ -82,21 +85,21 @@ header {
 label {
     font-size: 2em;
     position: fixed;
-    top: 15px;
-    height: 15px;
+    top: 5px;
     right: 15px;
     color: var(--branco); /* 0.5 = 50% transparencia (0 a 1 (100% */
 }
 
 nav ul {
-    height: 100vh; /* 100vh - 100% da altura da tela */
-    background-color: var(--azul4); /* Cor do menu */
     list-style: none; /* Remover bullets (bolinhas)*/
-    width: 50%; /* Tamanho do menu ao abrir */
-    position: fixed; 
+    background-color: var(--azul4); /* Cor do menu */
+    height: 100vh; /* 100vh - 100% da altura da tela */
+    position: fixed;
     top: 80px; /* Alinhar o menu com o cabeçalho */
     left: -50%; /* Posição do menu **colocar para a direita (rigth)** */
+    width: 50%; /* Tamanho do menu ao abrir */
     transition: all 0.7s;
+
 }
 
 nav ul li {
@@ -189,7 +192,7 @@ main h2 {
 .topicos {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .topicos img {
@@ -200,166 +203,177 @@ main h2 {
     font-weight: 600;
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/************ Sobre ***********/
+/* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
+#sobre1 {
+    background-color: var(--azul4);
+}
+
+#sobre1 .container {
+    flex-direction: column;
+}
+
+#sobre1 {
+    padding: 50px 15px;
+}
+
+#sobre1 h2, p {
+    color: var(--branco);
+}
+
+#sobre1 h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+
+/*<<<<<<<<<< Fim Smartphone Portrait<<<<<<<<<<<<*/
 
 /* Smartphone Landscape >>>>>>>>>>>>>>*/
 
 @media (min-width: 576px) {
-    /* Cabeçalho */
-    #logo img {
-        margin: 7px 0px 0px 0px; /* 1= top | 2=right | 3=botton | 4=left */
-    }
-
-    .container {
-        max-width: 540px;
-    }
-    main {
-        height: 70vh; /* Ajuste de altura do banner */
-        background: url(img/banner3.png);
-        background-size: cover;
-    }
-
-    .botao {
-        width: 120px;
-        padding: 3px 0px;
-    }
-
-    /*** Destaque ***/
-
-    #destaque .container {
-        flex-direction: row;
-    }
-    
-    #imagemDestaque {
-         margin-right: 50px; 
-    }
-    
-    #imagemDestaque img {
-        width: 256px;
-        height: 250px;
+        /****** Layout ******/
+        .container {
+            max-width: 540px;
+            /* background-color: #ffff00;*/
         }
-}
+    
+        /****** Cabeçalho ******/
+        nav ul {
+            right: -25%;
+            width: 25%;
+        }
+    
+        /****** Banner ******/
+        main {
+            height: 100vh;
+        }
+    
+        main h1 {
+            font-size: 3em;
+        }
+    
+        /*Destaque */
+    
+        #destaque .container {
+            flex-direction: row;
+    
+        }
+    
+        #imagemDestaque{
+            margin-right: 50px;
+        }
+    
+        #imagemDestaque img {
+            width: 256px;
+            height: 256px;
+    
+        }
+        /******sobre******/
+        #video iframe {
+            width: 560px;
+            height: 315px;
+            
+        }
+    }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<FIM SMARTPHONE LANDSCAPE <<<<<<<<<<<<<<<<<<<*/
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 768px) {
-    
+
+    /******* Layout ******/
     .container {
         max-width: 720px;
-    
-    }
-    /* Cabeçalho */
-    header {
-        height: 80px;
-    }
-    #logo img {
-        width: 115px;
-        height: 65px;
+        /* background-color: #00ff00; */
     }
 
-    nav ul {
-        top: 80px;
+    /****** Banner ******/
+    main {
+        height: 80vh;
     }
 
     main h1 {
         font-size: 440%;
-        text-align: center;
     }
-    
+
     main h2 {
         font-size: 170%;
-        text-align: center;
     }
 
     .botao {
         width: 160px;
         padding: 3px 0px;
+        margin-top: 15px;
     }
 
-    /** Destaque **/
-
+    /*Destaque*/
     #imagemDestaque img {
-        width: 330px;
-        height: 330px;
+        width: 440px;
+        height: 440px;
     }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>*/
-
 @media (min-width: 992px) {
-    
+
+    /****** Layout ******/
     .container {
         max-width: 960px;
-    
-    }
-    /* Cabeçalho */
-    header {
-        height: 95px;
-    }
-    #logo img {
-        width: 140px;
-        height: 80px;
+        /* background-color: #ffa500; */
     }
 
-    nav ul {
-        top: 95px;
-    }
-
-    main h1 {
-        font-size: 500%;
-        text-align: center;
-    }
-    
-    main h2 {
-        font-size: 180%;
-        text-align: center;
-    }
-
-    .botao {
-        width: 120px;
-        padding: 3px 0px;
+    /****** Banner ******/
+    main {
+        height: 70vh;
     }
 }
 
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/* Pcs / Notebooks >>>>>>>>>>>>>>>>>>>*/
-
+/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
+
+    /****** Layout ******/
     .container {
-        max-width: 1140px; 
-        justify-content: space-around;
+        max-width: 1140px;
+        /* background-color: #ff009d; */
+        
     }
- /* Cabeçalho */
+
+    /****** Cabeçalho ******/
     header {
-        height: 110px;
+        height: 100px;
     }
 
     #logo img {
-        width: 150px;
-        height: 90px;
-        margin: 8px 0px 0px 40px;
+        width: 194px;
+        height: 194px;
+        margin-top: 10px;
     }
-/* Transformação do menu */
+
+    /* Transformação do menu */
     label {
         display: none;
     }
 
     nav ul {
+        margin-top: 25px;
         width: 100%;
         height: auto;
         position: static;
-        /*background-color: transparent; /* Remover a cor do background */
+        /* remover a cor do background */
+        background-color: transparent;
     }
 
     nav ul li {
-        display: flex;
-        justify-content: space-between;
         float: left;
         border: 0;
     }
@@ -367,38 +381,38 @@ main h2 {
     nav ul li a {
         color: var(--branco);
     }
-    
+
     nav ul li a:hover {
-        color: var(--azul1);
+        color: var(--cinza1);
     }
 
+    /****** Banner ******/
     main h1 {
-        font-size: 700%;
-        text-align: center;
+        font-size: 6em;
     }
-    
+
     main h2 {
-        font-size: 200%;
-        text-align: center;
+        font-size: 2em;
     }
 
-    .botao {
-    width: 120px;
-    padding: 3px 0px;
-}
-/*** DESTAQUE ***/
-
-#imagemDestaque img {
-    width: 400px;
-    height: 400px;
-}
-
-
+    /*Destaque*/
     #destaque {
-        /* O Codigo abaixo fixa o banner (efeito parallax)*/
+        /*O codigo abaixo fixa o banner(efeito parallax
+        */
         background-attachment: fixed;
     }
+
+    /******sobre******/
+    #sobre1 .container {
+   flex-direction: row; 
+   align-items: center;
+    }
+    #video iframe {
+        margin: 0;
+    }
 }
+/* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
