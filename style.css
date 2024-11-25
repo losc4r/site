@@ -79,7 +79,7 @@ header {
 /* Efeito de deslizar o menu */
 /* Se check estiver "ticado" criar um estilo para <ul> */
 #check:checked~ul {
-    left: 0px;
+    right: 0px;
 }
 
 label {
@@ -95,8 +95,8 @@ nav ul {
     background-color: var(--azul4); /* Cor do menu */
     height: 100vh; /* 100vh - 100% da altura da tela */
     position: fixed;
-    top: 80px; /* Alinhar o menu com o cabeçalho */
-    left: -50%; /* Posição do menu **colocar para a direita (rigth)** */
+    top: 60px; /* Alinhar o menu com o cabeçalho */
+    right: -50%; /* Posição do menu **colocar para a direita (rigth)** */
     width: 50%; /* Tamanho do menu ao abrir */
     transition: all 0.7s;
 
@@ -105,7 +105,7 @@ nav ul {
 nav ul li {
     padding: 15px 20px 15px 20px; /* 1= top | 2=right | 3=botton | 4=left */
     border-bottom: 1px solid var(--branco); /* Linhas sobre os nomes do menu */
-    text-align: left;
+    text-align: right;
 }
 
 nav ul li a {
