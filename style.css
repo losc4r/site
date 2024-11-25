@@ -317,6 +317,12 @@ main h2 {
         width: 440px;
         height: 440px;
     }
+
+    #logo img {
+        width: 160px;
+        height: 105px;
+        margin-top: 65px;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -408,7 +414,7 @@ main h2 {
    align-items: center;
     }
     #video iframe {
-        margin: 0;
+        margin: 0px 0px 0px 20px;
     }
 }
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
