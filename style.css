@@ -54,6 +54,20 @@ body {
     margin-top: 10px;
 }
 
+.botao1 {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    background-color: var(--vermelho);
+    font-weight: bold;
+    width: 120px;
+    padding: 5px 10px;
+    border: 2px solid var(--branco);
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 10px;
+}
+
 /* Fim do Layout */
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>*/
@@ -65,171 +79,199 @@ header {
     
 }
 
-#logo img {
-    width: 125px;
-    height: 75px;
-    margin: 60px 0px 0px 15px;
+    #logo img {
+        width: 125px;
+        height: 75px;
+        margin: 60px 0px 0px 15px;
 
-}
-
-#check {
-    display: none;
-}
-
-/* Efeito de deslizar o menu */
-/* Se check estiver "ticado" criar um estilo para <ul> */
-#check:checked~ul {
-    right: 0px;
-}
-
-label {
-    font-size: 2em;
-    position: fixed;
-    top: 5px;
-    right: 15px;
-    color: var(--branco); /* 0.5 = 50% transparencia (0 a 1 (100% */
-}
-
-nav ul {
-    list-style: none; /* Remover bullets (bolinhas)*/
-    background-color: var(--azul4); /* Cor do menu */
-    height: 100vh; /* 100vh - 100% da altura da tela */
-    position: fixed;
-    top: 60px; /* Alinhar o menu com o cabeçalho */
-    right: -50%; /* Posição do menu **colocar para a direita (rigth)** */
-    width: 50%; /* Tamanho do menu ao abrir */
-    transition: all 0.7s;
-
-}
-
-nav ul li {
-    padding: 15px 20px 15px 20px; /* 1= top | 2=right | 3=botton | 4=left */
-    border-bottom: 1px solid var(--branco); /* Linhas sobre os nomes do menu */
-    text-align: right;
-}
-
-nav ul li a {
-    color: var(--branco);
-    text-decoration: none;
-    font-weight: bold;
     }
 
-    /* Banner */
-main {
-    height: 70vh; /* Ajuste de altura do banner */
-    background: url(img/banner3.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+    #check {
+        display: none;
+    }
 
-main h1, h2 {
-    color: var(--branco) ;
-    text-shadow: var(--azul4) 0.03em 0.03em 0.03em; /* sombra */ 
-}
+    /* Efeito de deslizar o menu */
+    /* Se check estiver "ticado" criar um estilo para <ul> */
+    #check:checked~ul {
+        right: 0px;
+    }
 
-main h1 {
-    font-size: 2.2em;
-}
-main h2 {
-    font-size: 0.9em;
-}
+    label {
+        font-size: 2em;
+        position: fixed;
+        top: 5px;
+        right: 15px;
+        color: var(--branco); /* 0.5 = 50% transparencia (0 a 1 (100% */
+    }
 
-.botao {
-    width: 120px;
-    padding: 3px 0px;
-}
+    nav ul {
+        list-style: none; /* Remover bullets (bolinhas)*/
+        background-color: var(--azul4); /* Cor do menu */
+        height: 100vh; /* 100vh - 100% da altura da tela */
+        position: fixed;
+        top: 60px; /* Alinhar o menu com o cabeçalho */
+        right: -50%; /* Posição do menu **colocar para a direita (rigth)** */
+        width: 50%; /* Tamanho do menu ao abrir */
+        transition: all 0.7s;
 
-/*** Destaque ***/
+    }
 
-#destaque {
-    background: url(img/banner4.jpg);
-    background-size: cover;
-    background-position: center;
-    /* Espaçamento interno para não encostar nas bordas */
-    padding: 50px 15px;
-}
+    nav ul li {
+        padding: 15px 20px 15px 20px; /* 1= top | 2=right | 3=botton | 4=left */
+        border-bottom: 1px solid var(--branco); /* Linhas sobre os nomes do menu */
+        text-align: right;
+    }
 
-/* Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
+    nav ul li a {
+        color: var(--branco);
+        text-decoration: none;
+        font-weight: bold;
+        }
 
-#destaque .container {
-    flex-direction: column;
-    align-items: center;
-}
+        /* Banner */
+    main {
+        height: 70vh; /* Ajuste de altura do banner */
+        background: url(img/banner3.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 
-/* Para esconder a imagem, usamos display:none no container da imagem | Para exibir novamente em telas maiores, usamos display: block 
+    main h1, h2 {
+        color: var(--branco) ;
+        text-shadow: var(--azul4) 0.03em 0.03em 0.03em; /* sombra */ 
+    }
 
-#imagemDestaque {
-    display: none;
-} */
+    main h1 {
+        font-size: 2.2em;
+    }
+    main h2 {
+        font-size: 1em;
+    }
 
-#imagemDestaque img {
-    width: 200px;
-    height: 200px;
-    /* Arredondar um imagem quadrada */
-    border-radius: 50%;
+    .botao {
+        width: 120px;
+        padding: 3px 0px;
+    }
 
-}
+    /*** Destaque ***/
 
-#textoDestaque {
-    color: var(--branco)
-}
+    #destaque {
+        background: url(img/banner4.jpg);
+        background-size: cover;
+        background-position: center;
+        /* Espaçamento interno para não encostar nas bordas */
+        padding: 50px 15px;
+    }
 
-#textoDestaque h2 {
-    margin-bottom: 20px;
-}
+    /* Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
 
-/* Atenção !!! Detalhe do sinal ">" referente ao elemento imediato */
+    #destaque .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-#textoDestaque>p {
-    /*color: var(--azul);*/
-    margin-bottom: 15px;
-}
+    /* Para esconder a imagem, usamos display:none no container da imagem | Para exibir novamente em telas maiores, usamos display: block 
 
-.topicos {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
+    #imagemDestaque {
+        display: none;
+    } */
 
-.topicos img {
-    margin-right: 10px;
-}
+    #imagemDestaque img {
+        width: 200px;
+        height: 200px;
+        /* Arredondar um imagem quadrada */
+        border-radius: 50%;
 
-.topicos p {
-    font-weight: 600;
-}
+    }
 
-/************ Sobre ***********/
-/* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
-#sobre1 {
-    background-color: var(--azul4);
-}
+    #textoDestaque {
+        color: var(--branco)
+    }
 
-#sobre1 .container {
-    flex-direction: column;
-}
+    #textoDestaque h2 {
+        margin-bottom: 20px;
+    }
 
-#sobre1 {
-    padding: 50px 15px;
-}
+    /* Atenção !!! Detalhe do sinal ">" referente ao elemento imediato */
 
-#sobre1 h2, p {
-    color: var(--branco);
-}
+    #textoDestaque>p {
+        /*color: var(--azul);*/
+        margin-bottom: 15px;
+    }
 
-#sobre1 h2 {
-    margin-bottom: 20px;
-}
+    .topicos {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
 
-#video iframe {
-    width: 340px;
-    height: 191px;
-    margin-top: 20px;
-}
+    .topicos img {
+        margin-right: 10px;
+    }
+
+    .topicos p {
+        font-weight: 600;
+    }
+
+    /************ Sobre ***********/
+    /* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
+    #sobre1 {
+        background-color: var(--azul4);
+    }
+
+    #sobre1 .container {
+        flex-direction: column;
+    }
+
+    #sobre1 {
+        padding: 50px 15px;
+    }
+
+    #sobre1 h2, p {
+        color: var(--branco);
+    }
+
+    #sobre1 h2 {
+        margin-bottom: 20px;
+    }
+
+    #video iframe {
+        width: 340px;
+        height: 191px;
+        margin-top: 20px;
+    }
+
+    #faixaDestaque {
+        background: url(img/banner4.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 15px;
+        text-align: center;
+    }
+
+    #faixaDestaque .container {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #imagemFaixa img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #textoFaixa  h2 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    #textoFaixa p {
+        font-size: 1em;
+        margin-bottom: 30px
+    }
 
 /*<<<<<<<<<< Fim Smartphone Portrait<<<<<<<<<<<<*/
 
@@ -279,6 +321,7 @@ main h2 {
             height: 315px;
             
         }
+
     }
 
 /*<<<<<<<<<<<<<<<<<FIM SMARTPHONE LANDSCAPE <<<<<<<<<<<<<<<<<<<*/
@@ -295,7 +338,7 @@ main h2 {
 
     /****** Banner ******/
     main {
-        height: 80vh;
+        height: 70vh;
     }
 
     main h1 {
@@ -307,20 +350,21 @@ main h2 {
     }
 
     .botao {
-        width: 160px;
-        padding: 3px 0px;
+        width: 180px;
+        padding: 10px 0px;
         margin-top: 15px;
+        font-size: 1.8em;
     }
 
     /*Destaque*/
     #imagemDestaque img {
-        width: 440px;
-        height: 440px;
+        width: 350px;
+        height: 350px;
     }
 
     #logo img {
-        width: 160px;
-        height: 105px;
+        width: 150px;
+        height: 90px;
         margin-top: 65px;
     }
 }
@@ -360,9 +404,9 @@ main h2 {
     }
 
     #logo img {
-        width: 194px;
-        height: 194px;
-        margin-top: 10px;
+        width: 180px;
+        height: 100px;
+        margin-top: 5px;
     }
 
     /* Transformação do menu */
@@ -386,6 +430,7 @@ main h2 {
 
     nav ul li a {
         color: var(--branco);
+        font-size: 25px;
     }
 
     nav ul li a:hover {
@@ -408,6 +453,12 @@ main h2 {
         background-attachment: fixed;
     }
 
+    .botao {
+        width: 160px;
+        padding: 3px 0px;
+        margin-top: 30px;
+    }
+
     /******sobre******/
     #sobre1 .container {
    flex-direction: row; 
@@ -415,6 +466,30 @@ main h2 {
     }
     #video iframe {
         margin: 0px 0px 0px 20px;
+    }
+
+    /***** Faixa de Destaque *****/
+    #faixaDestaque {
+        background-attachment: fixed;
+    }
+
+    #faixaDestaque .container {
+        flex-direction: row-reverse;
+    }
+
+    #imagemFaixa img {
+        width: 260px;
+        height: 260px;
+    }
+
+    #textoFaixa  h2 {
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+
+    #textoFaixa p {
+        font-size: 1.8em;
+        margin-bottom: 30px
     }
 }
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -433,10 +508,7 @@ main h2 {
     header {
         height: 120px;
     }
-    #logo img {
-        width: 180px;
-        height: 100px;
-    }
+
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
