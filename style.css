@@ -68,6 +68,37 @@ body {
     margin-top: 10px;
 }
 
+/* Layout para 3 cartões */
+.card {
+    width: 338px;
+    height: 300px;
+    margin-top: 25px;
+    background-color: var(--cinza);
+    border: 1px solid var(--azul);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+}
+
+.card a {
+    padding: 5px 20px;
+    border: 2;
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
 /* Fim do Layout */
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>*/
@@ -273,6 +304,36 @@ header {
         margin-bottom: 30px
     }
 
+    /****** Seção de conteúdo (cards) ******/
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2 {
+    color: var(--azul);
+    margin-bottom: 25px;
+}
+
+#todos {
+    color: var(--azul);
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
 /*<<<<<<<<<< Fim Smartphone Portrait<<<<<<<<<<<<*/
 
 /* Smartphone Landscape >>>>>>>>>>>>>>*/
@@ -366,6 +427,11 @@ header {
         width: 150px;
         height: 90px;
         margin-top: 65px;
+    }
+
+    /****** Seção de conteúdo - cards ******/
+    .card {
+         margin: 25px 10px 0px 10px;
     }
 }
 
