@@ -27,6 +27,11 @@
 }
 
 /* Layout */
+html {
+    /* Rolagem suave do conteúdo */
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", serif;
     font-size: 1em; /* 1em = 100% (tamanho padrão) */
@@ -68,35 +73,63 @@ body {
     margin-top: 10px;
 }
 
+/* topo do site */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
 /* Layout para 3 cartões */
 .card {
-    width: 338px;
-    height: 300px;
-    margin-top: 25px;
-    background-color: var(--cinza);
-    border: 1px solid var(--azul);
-    border-radius: 25px;
+    width: 308px;
+    height: 420px;
+    margin-top: 20px;
+    border: 10px solid var(--branco);
+    border-radius: 35px;
     text-align: center;
+    background-color: white;
 }
 
 .card img {
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 24px 23px 0px 0px;
+    width: 308px;
+    height: 180px;    
 }
 
 .card h3 {
     margin-top: 15px;
+    color: var(--azul4);
+    font-weight:bold
 }
 
 .card p {
-    text-align: left;
     padding: 10px 30px 50px 30px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
 .card a {
     padding: 5px 20px;
-    border: 2;
+    border: 2px;
     background-color: var(--vermelho);
     color: var(--branco);
+    font-size: 24px;
+}
+
+.flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#social {
+    margin-bottom: 25px;
+    padding: 20px; 
+}
+
+#social img {
+    margin-left: 10px;
 }
 
 /* Fim do Layout */
@@ -331,9 +364,23 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
 }
 
+/********* Rodapé **********/
+
+footer {
+    padding: 50px 0px;
+    background-color: var(--azul4);
+    font-size: 0.875em;
+    color: #fff;
+    text-align: center;
+    }
+      
+footer a {
+    text-decoration: none;
+    color: #fff;
+    }
+      
 /*<<<<<<<<<< Fim Smartphone Portrait<<<<<<<<<<<<*/
 
 /* Smartphone Landscape >>>>>>>>>>>>>>*/
@@ -381,6 +428,17 @@ header {
             width: 560px;
             height: 315px;
             
+        }
+
+        /* Rodapé */
+        .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        #social {
+        margin: 0;
         }
 
     }

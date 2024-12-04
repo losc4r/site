@@ -12,7 +12,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header class="container">
+    <header class="container" id="inicio">
         <!-- Logotipo -->
         <div id="logo">
                 <img src="img/abadalogo.png" alt="Logotipo">
@@ -22,9 +22,9 @@
             <input type="checkbox" id="check">
             <label for="check">&#9776;</label> <!--&#x268c; menu 2 barras-->
             <ul>
-                <li><a id="inicio" href="#">Início</a></li>
-                <li><a id="sobre" href="#">Sobre</a></li>
-                <li><a href="#">Conteúdo</a></li>
+                <li><a id="início" href="#">Início</a></li>
+                <li><a id="sobre" href="#destaque">Sobre</a></li>
+                <li><a id="conteúdo" href="#sobre1">Conteúdo</a></li>
                 <li><a id="contato" href="#">Contato</a></li>
             </ul>
         </nav>
@@ -98,33 +98,48 @@
     <!-- Conteúdo (Cartões) -->
     <section id="conteudo">
         <div class="container">
-            <h2>Conteúdo</h2>
+            <!-- <h2>Conteúdo</h2> -->
             <div class="containerCards">
                 <div class="card">
-                    <img src="img/cpu.png" alt="cpu">
-                    <h3>PC Gamer</h3>
-                    <p>Vídeos com montagem passo a passo do PC Gamer</p>
+                    <img src="img/c1.PNG" alt="cpu">
+                    <h3>O que é a Abadá Capoeira</h3>
+                    <p>Descubra os fundamentos de um dos maiores grupos de capoeira do mundo.</p>
                     <br> <!-- Quebra de linha -->
                     <a href="#" class="botao">Saiba +</a>
                 </div>
                 <div class="card">
-                    <img src="img/video.png" alt="video">
-                    <h3>Review</h3>
-                    <p>Vídeos com montagem do PC Gamer completo passo a passo</p>
+                    <img src="img/c2.jpg" alt="video">
+                    <h3>Quem foi Mestre Camisa</h3>
+                    <p>José Tadeu Carneiro Cardoso, a mente por trás da Capoeira Abadá</p>
                     <br>
                     <a href="#" class="botao">Saiba +</a>
                 </div>
                 <div class="card">
-                    <img src="img/hardware.png" alt="hardware">
-                    <h3>Manutenção</h3>
-                    <p>Vou compartilhar casos reais de clientes que fizeram manutenção comigo</p>
+                    <img src="img/c3.jpeg" alt="hardware">
+                    <h3>História da Capoeira</h3>
+                    <p>Saiba mais sobre a história dessa grande arte Afro Brasileira e enriqueça mais a sua história.</p>
                     <a href="#" class="botao">Saiba +</a>
                 </div>
             </div>
-            <a href="#" id="todos">Conheça todos >></a>
+            <!-- <a href="#" id="todos">Conheça todos >></a> -->
         </div>
     </section>       
 
+    <!-- Contato -->
+    <footer>
+        <div class="Container Flex5">
+            <div>
+                <p>&#169;<span id="copyrightYear"></span> - <a href="" target="_blank">2024 - Carlos Antonio</a></p>
+            </div>
+            <div id="social">
+                <a href="https://www.instagram.com/tvabadaproducoes" target="_blank"><img src="img/instagram1.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/jequitiba" target="_blank"><img src="img/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Topo do site -->
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo do site"></a>
 </body>
 
 </html>
