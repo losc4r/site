@@ -1,6 +1,6 @@
 ![GitHub License](https://img.shields.io/github/license/losc4r/site?style=flat)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Flosc4r.github.io%2Fsite%2F)
-
+"[CSS Validation](https://jigsaw.w3.org/css-validator/images/vcss-blue)
 
 # HTML5 e CSS3
 Estudo do html5 e css3
