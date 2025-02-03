@@ -16,10 +16,11 @@ function slider(){
     }
     // troca da imagem de background no CSS
 main.style.backgroundImage = backgrounds[indice]
-main.style.transtion = 'background-image 1s ease-in-out'
+main.style.transition = 'background-image 1s ease-in-out'
 }
 
-setInterval(slider, 2000)
+setInterval(slider, 3000)
+
 // inserindo o ano na tag <span>
 let ano = document.getElementById('copyrightYear')
 // a linha abaixo obtem o ano atuali do sistema
