@@ -195,7 +195,7 @@ header {
         /* Banner */
     main {
         height: 70vh; /* Ajuste de altura do banner */
-        background: url(img/banner3.png);
+        background: url(img/ft1.jpg);
         background-size: cover;
         background-position: center;
         display: flex;
